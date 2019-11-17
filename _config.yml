@@ -8,7 +8,7 @@ name: X-Paidia Studio
 title: X-Paidia Studio
 description: >
   Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
-url: http://xpaidia.com
+url: https://switchball.github.io
 twitter_username: 
 default_img: /assets/images/seo.jpg
 social:
@@ -43,7 +43,7 @@ author:
 # Pagination settings
 pagination:
   enabled: true
-  debug: false
+  debug: true
   per_page: 12
   permalink: '/page/:num/'
   title: ':title'
