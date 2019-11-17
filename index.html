@@ -1,14 +1,14 @@
 ---
 layout: default
 pagination:
-  enabled: true
+  enabled: false
 ---
 <!-- The main content area -->
 <div class="posts">
   <div class="grid-xlarge">
     <div class="posts__container" itemscope itemtype="http://schema.org/Blog" data-columns>
 
-      {% for post in paginator.posts %}
+      {% for post in site.posts %}
 
         <!-- The tag below includes the markup for each post - partials/post-card.html -->
         {% include post-card.html %}

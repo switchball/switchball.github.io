@@ -42,8 +42,8 @@ author:
 
 # Pagination settings
 pagination:
-  enabled: true
-  debug: true
+  enabled: false
+  debug: false
   per_page: 12
   permalink: '/page/:num/'
   title: ':title'
