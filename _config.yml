@@ -4,12 +4,12 @@ baseurl: ""
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
-name: X-Paidia Studio
-title: X-Paidia Studio
+name: Thomas Vaeth
+title: The Barber Theme
 description: >
   Barber is a blog theme for Jekyll built by Thomas Vaeth for Samesies using HTML, Sass, and JavaScript.
-url: https://switchball.github.io
-twitter_username: 
+url: http://barber.samesies.io
+twitter_username: thomasvaeth
 default_img: /assets/images/seo.jpg
 social:
   - name: twitter
@@ -42,7 +42,7 @@ author:
 
 # Pagination settings
 pagination:
-  enabled: false
+  enabled: true
   debug: false
   per_page: 12
   permalink: '/page/:num/'
