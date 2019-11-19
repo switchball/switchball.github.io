@@ -17,7 +17,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for webcomic -->
-    <link rel="stylesheet" href={{ site.url }}/css/comic.css>
+    <link href="{{ site.url }}/css/comic.css" rel="stylesheet">
 
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Arvo|Fredoka+One|Roboto" rel="stylesheet">
@@ -28,20 +28,29 @@
   </head>
 
   <body>
+
     <div class="container">
       <div class="row">
-
         <div class="jumbotron">
-          <a href={{ site.url }}/index.html><h1>{{ site.title }}</h1></a>
+          <a href={{ site.url }}/><h1>{{ site.title }}</h1></a>
           <p>{{ site.description }}</p>
         </div>
 
         <div class="col-md-12 center">
-            {% include navigation.html %}
+          {% include navigation.html %}
           <div class="panel center col-md-12">
-                  {{ content }}
-          </div><!-- end panel-->
-        </div><!--end col-md-9 center-->
+
+            <div class="comic-panel center">
+              <a name="top-page"></a>
+              <a href= {{ site.url }}{{ page.next.url }}#top-page>{{ content }}</a>
+              <ul class="pager">
+                <li><a class="btn btn-outline-secondary" href= {{ site.url }}{{ page.previous.url }}#top-page >PREVIOUS</a></li>
+                <li><a class="btn btn-outline-primary" href= {{ site.url }}{{ page.next.url }}#top-page >NEXT</a></li>
+              </ul>
+            </div><!--comic div-->
+
+        </div><!--end panel-->
+        </div><!--end main div-->
       </div><!--end row-->
     </div><!-- end container-->
 
