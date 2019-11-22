@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="X-Paidia" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="2007 独立游戏原型制作 GDC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Notes&#x2F;2007 独立游戏原型制作 GDC ">
+<meta property="og:url" content="http:&#x2F;&#x2F;xpaidia.com&#x2F;2019&#x2F;11&#x2F;22&#x2F;Notes&#x2F;2007%20%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F%E5%8E%9F%E5%9E%8B%E5%88%B6%E4%BD%9C%20GDC%20&#x2F;index.html">
+<meta property="og:site_name" content="X-Paidia">
+<meta property="og:description" content="2007 独立游戏原型制作 GDC">
+<meta property="og:locale" content="ch">
+<meta property="og:updated_time" content="2019-11-22T09:47:23.498Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://xpaidia.com/2019/11/22/Notes/2007%20%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F%E5%8E%9F%E5%9E%8B%E5%88%B6%E4%BD%9C%20GDC%20/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Notes/2007 独立游戏原型制作 GDC  | X-Paidia</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">X-Paidia</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="ch">
+    <link itemprop="mainEntityOfPage" href="http://xpaidia.com/2019/11/22/Notes/2007%20%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F%E5%8E%9F%E5%9E%8B%E5%88%B6%E4%BD%9C%20GDC%20/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="zitaoye">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="X-Paidia">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Notes/2007 独立游戏原型制作 GDC 
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2019-11-22 17:47:23" itemprop="dateCreated datePublished" datetime="2019-11-22T17:47:23+08:00">2019-11-22</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Notes</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="2007-独立游戏原型制作-GDC"><a href="#2007-独立游戏原型制作-GDC" class="headerlink" title="2007 独立游戏原型制作 GDC"></a>2007 独立游戏原型制作 GDC</h2> <a id="more"></a> 
+
+
+<p>下载吹哥制作的原型请到 <a href="http://number\-none.com/blow/。相关演讲请见[av23269382](https://www.bilibili.com/video/av23269382)。" target="_blank" rel="noopener">http://number\-none.com/blow/。相关演讲请见[av23269382](https://www.bilibili.com/video/av23269382)。</a></p>
+<p><a href="https://www.bilibili.com/video/av21976535?from=search&seid=12114348325786882941" target="_blank" rel="noopener">https://www.bilibili.com/video/av21976535?from=search&amp;seid=12114348325786882941</a></p>
+<h3 id="Burning-Questions"><a href="#Burning-Questions" class="headerlink" title="Burning Questions"></a>Burning Questions</h3><ul>
+<li>What is a prototype?</li>
+<li>How to we choose a good prototype to make?</li>
+<li>How do we know when a prototype is successful?</li>
+<li>How long should we spend prototyping, before going into production?</li>
+</ul>
+<p>Prototyping is different for indies than non-indies;</p>
+<h3 id="Galstaff-魔法飞弹"><a href="#Galstaff-魔法飞弹" class="headerlink" title="Galstaff 魔法飞弹"></a>Galstaff 魔法飞弹</h3><ul>
+<li>Gestural spell-casting game - like Black &amp;White, Arx Fatalis</li>
+<li>Uses variations in a gesture to contol parameters of the spell</li>
+</ul>
+<ol>
+<li>认为这样的技术自己可以做得更好 </li>
+<li>这些游戏中不关心你画的符咒的变化，手势本身失去了意义；= 一个按键，blow想要画的方式带来不同风格的效果选择；</li>
+</ol>
+<p>（展示原型）</p>
+<p>这个原型是一个失败的原型，没有很好的实现玩法的部分：</p>
+<p>The problem:</p>
+<ol>
+<li>The prototype didn’t have me trying to cast specific spells to achieve goals…</li>
+<li>Should have made a small game (much simpler than Galstaff, both in tech and gameplay ) as a 2nd-stage prototype for spellcasting.</li>
+</ol>
+<p>并不是要做成一个完整的游戏才有的，正确的做法应该利用这个原型先做一个2d小游戏之类的东西。</p>
+<h3 id="Oracle-Billiards-先知台球："><a href="#Oracle-Billiards-先知台球：" class="headerlink" title="Oracle Billiards 先知台球："></a>Oracle Billiards 先知台球：</h3><p>在潜意识里的一个想法，台球的目标位置可以被预测；我怎么样才可以看到未来</p>
+<ol>
+<li>Annoyed by time spent on tech. 想要证明我们一个big tech penis thing</li>
+<li>Wanted to do some things in 2D, focus on mind-expanding gameplay. 放在玩法上能够新颖深刻，开拓心灵</li>
+<li>想要做很多的原型</li>
+</ol>
+<p>这游戏变成了一个策略游戏；但是一点点的小转动方向，这些球就会发生剧烈的变化，即便加入微调也是如此。</p>
+<p>直到现在还不知道要怎么做成一个游戏，太过于混乱了Chaotic。</p>
+<p>但是认为这是一个成功的原型：<strong>因为给了我一种在任何游戏中都没有体会过的感受</strong>。</p>
+<p>学习了很多东西，并且也没有花费特别多的时间。</p>
+<h3 id="Braid"><a href="#Braid" class="headerlink" title="Braid"></a>Braid</h3><p>A game by Jonathan Blow</p>
+<p>World Art by David Hellman</p>
+<p>Character art by Edmund Mcmillen</p>
+<p>一定程度上受到前个原型的启发：如果我可以回到过去？如果我可以…如果…</p>
+<p>”如果你可以undo anything anytime？“</p>
+<p>** 永远不会死亡，永远不会失败**</p>
+<p>游戏背后的想法是”Keep Rule very simple“，怪物数量变得少，可以做的事少；但是通过操操控时间。</p>
+<p>每个谜题这种<strong>时间的表现</strong>都不同，利用这些不同的表现来进行变化；【动量可以有什么样的表现，玩家可以操控的东西又有怎样的变化】</p>
+<h4 id="想法的出现与发展"><a href="#想法的出现与发展" class="headerlink" title="想法的出现与发展"></a>想法的出现与发展</h4><p>2. 如果有些东西不受到时间的影响，那会怎样？（如果不做整个原型，事先事不知道如何去做的）（逻辑上，空间的刻度上云）</p>
+<p>3. 在这样的一些时间里，如果有一些东西打破规则？【动量相反？朝向？】</p>
+<p>4. 在技术上存储了时间，如果这个空间状态和其他的东西绑定？例如空间？【动量区域，以及动量的时间，加速等】</p>
+<p>5. 如果这些存储的事物的状态会变成另外一个平行时空，会怎么样（所有的这些创造力都是因为我一个程序员/设计师，而不仅仅是一个设计师）</p>
+<p>6.  局部子弹时间；</p>
+<h4 id="原型过程"><a href="#原型过程" class="headerlink" title="原型过程"></a>原型过程</h4><ol>
+<li><p>最早是在泰国旅游的时候找到的2015.1，发给一些设计师朋友，</p>
+<ol>
+<li>缺少production value并没有影响人们去玩并且享受它。并且很多在当时做的关卡都完整地保留了</li>
+</ol>
+</li>
+<li><p>Braid itself was an environment for prototyping. 游戏主题就是创作不同地时间Behavior</p>
+<ol>
+<li>Each world is about asking a “what if” question.   就是空间和实验，本身构成一个内容</li>
+</ol>
+<blockquote>
+<p>What if the stuff that you rewind lives on in an alternate reality?</p>
+</blockquote>
+<pre><code>2\. Take the basic paltformer rules, prototype in the new time behavior , see how it feels.</code></pre></li>
+</ol>
+<p>3. 放弃了一些Stuff that seemed cool but Got Cut</p>
+<pre><code>\- Turn\-Based Platformer \(didn&apos;t think of a rich set of puzzles\) 只得到了比较少的解谜风格。
+
+\- Future prediction, like Oracle Billiards \(didn&apos;t change gameplay enough\)
+
+\- 3D Extrusion : into the future, into the past</code></pre><p>4. Braid’s Art Process 只有程序员美术，大部分时间；</p>
+<pre><code>\- A fully separate prototyping process from the rest of the game\! 不好的地方后期需要花费大量时间解决。
+
+\- Helped make the project simpler to develop, and to fighre out what the art needed to be. 美术风格不要混淆，因为倒退时间本来就难理解；</code></pre><h3 id="Braid-Tactics"><a href="#Braid-Tactics" class="headerlink" title="Braid Tactics"></a>Braid Tactics</h3><pre><code>Carrying Braid concepts into a strategy wargame. 向日本厂商致敬！</code></pre><ul>
+<li><p>Different units with different sparklies</p>
+</li>
+<li><p>Different  Spreads</p>
+<ul>
+<li><p>Terrain    </p>
+</li>
+<li><p>Army Laout(footmen vs archers)</p>
+</li>
+<li><p>Enemy has spread too - 2D battle surface (Battle visualization)</p>
+</li>
+</ul>
+</li>
+<li><p>Support funciton for orders</p>
+</li>
+</ul>
+<p>一个好的原型</p>
+<p>问题所在：</p>
+<p>Didn’t feel good to play from second to second;</p>
+<p>Hard to mentalize the state of a battle - there’s a lot of chaos.</p>
+<p>Idea: Make a new version that feels more like Advance Wars? （可能做一个更像高级战争的，但谁知道呢）</p>
+<h3 id="Raspberry"><a href="#Raspberry" class="headerlink" title="Raspberry"></a>Raspberry</h3><ul>
+<li><p>Took 1 week to make</p>
+</li>
+<li><p>Spurred from a discussion about games as an expressive medium </p>
+<ul>
+<li>Basically just went home and started working on it, for a week.</li>
+</ul>
+</li>
+</ul>
+<p>尝试<strong>只用玩法表示感情</strong>，用规则明了的；</p>
+<ol>
+<li>按照颜色深浅</li>
+<li>连连看</li>
+<li>让不同原型呆在不同的</li>
+<li>…</li>
+</ol>
+<p>然后进入一个不同的序列部分；会不断地变化。</p>
+<p>原型并没有达到想要的用玩法表示音乐式的情感，但是带来了一些从未有过的体验，很好的原型。</p>
+<h3 id="Painter"><a href="#Painter" class="headerlink" title="Painter"></a>Painter</h3><ul>
+<li>Took 2 weeks  [好像Passpartout！]</li>
+</ul>
+<p>画家的问题</p>
+<ol>
+<li>You put a lot of effort into a painting, and then the judges tell you it sucks.</li>
+<li>The turn-around time is too long to let you proceed at a reasonable pace, unless you only paint very spammy stuff or are very patient.</li>
+</ol>
+<h3 id="Eight-Dots"><a href="#Eight-Dots" class="headerlink" title="Eight Dots"></a>Eight Dots</h3><h3 id="Prototyping-Different-for-Indies"><a href="#Prototyping-Different-for-Indies" class="headerlink" title="Prototyping : Different for Indies"></a>Prototyping : Different for Indies</h3><ul>
+<li><p>We’re way more inversted than employees of large/dependent companies.</p>
+</li>
+<li><p>Easier political process</p>
+<ul>
+<li><p>Don’t need to convince so much.</p>
+</li>
+<li><p>Mainly exploring.</p>
+</li>
+</ul>
+</li>
+<li><p>Don’t have to ship a product for so-and-so fiscal period.</p>
+</li>
+</ul>
+<h4 id="My-Recommendations"><a href="#My-Recommendations" class="headerlink" title="My Recommendations:"></a>My Recommendations:</h4><ol>
+<li>Don’t do ideas that are “just good enough”.</li>
+<li>You want to feel the greatness in your prototype.</li>
+<li>Pass on ideas that seem good or just okay.</li>
+<li>Keep prototyping until you find something that you can’t not make;</li>
+</ol>
+<p>不要轻易放弃你的想法，可以放在一边一段时间再拿出来，树莓到见证者</p>
+<p>制作最好的想法：</p>
+<p>Because this is your life you are spending!   “Wow, that was a great way to spend 2 years “.</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2019/11/22/Notes/2007%20%E5%85%B3%E4%BA%8E%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%9A%84How%20and%20Why/" rel="next" title="Notes/2007 关于游戏开发的How and Why">
+                  <i class="fa fa-chevron-left"></i> Notes/2007 关于游戏开发的How and Why
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2019/11/22/Notes/2016%20%20PAX%E7%9A%84%E6%95%85%E4%BA%8B%E6%97%B6%E9%97%B4%EF%BC%88Storytime%20with%20Jonathan%20Blow%20at%20PAX%20East%202016%EF%BC%892016/" rel="prev" title="Notes/2016  PAX的故事时间（Storytime with Jonathan Blow at PAX East 2016）2016">
+                  Notes/2016  PAX的故事时间（Storytime with Jonathan Blow at PAX East 2016）2016 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2007-独立游戏原型制作-GDC"><span class="nav-number">1.</span> <span class="nav-text">2007 独立游戏原型制作 GDC</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Burning-Questions"><span class="nav-number">1.1.</span> <span class="nav-text">Burning Questions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Galstaff-魔法飞弹"><span class="nav-number">1.2.</span> <span class="nav-text">Galstaff 魔法飞弹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Oracle-Billiards-先知台球："><span class="nav-number">1.3.</span> <span class="nav-text">Oracle Billiards 先知台球：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Braid"><span class="nav-number">1.4.</span> <span class="nav-text">Braid</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#想法的出现与发展"><span class="nav-number">1.4.1.</span> <span class="nav-text">想法的出现与发展</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#原型过程"><span class="nav-number">1.4.2.</span> <span class="nav-text">原型过程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Braid-Tactics"><span class="nav-number">1.5.</span> <span class="nav-text">Braid Tactics</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Raspberry"><span class="nav-number">1.6.</span> <span class="nav-text">Raspberry</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Painter"><span class="nav-number">1.7.</span> <span class="nav-text">Painter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Eight-Dots"><span class="nav-number">1.8.</span> <span class="nav-text">Eight Dots</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Prototyping-Different-for-Indies"><span class="nav-number">1.9.</span> <span class="nav-text">Prototyping : Different for Indies</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#My-Recommendations"><span class="nav-number">1.9.1.</span> <span class="nav-text">My Recommendations:</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">zitaoye</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zitaoye</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
